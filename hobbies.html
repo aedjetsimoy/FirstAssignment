@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("ul").fadeToggle("slow");
+        $("#div1").fadeToggle("slow");
+        $("p").fadeToggle("slow");
+    });
+});
+</script>
 <title>My hobbies</title>
 <style>
 { background: url(background.jpg); }
@@ -40,7 +50,9 @@ nav a { text-decoration: none; }
   </b>
 </nav>
 <main>
- <h2>Hobbies </h2>
+<div>
+<button> Touch me... </button>
+ <h3> List of Hobbies </h3>
  <ul>
    <li> Playing video games </li>
    <li> Listening to korean music/kpop </li>
@@ -48,11 +60,18 @@ nav a { text-decoration: none; }
    <li> Love korean food the most, especially KBBQ </li>
    <li> Going to music festivals or kpop concerts </li>
  </ul>
- <p> I love playing video games, I play a variety types of games like league of legends, overwatch, hearthstone, but mostly I got into Black Dessert Online recently and I love it, it is probably one of the best mmorpg games that is currently out in my opinion. Yes, I also like Korean culture eventhough I don't understand but one day I will learn their language. </p>
- <p> Here is one my favorite Kpop music. Hope you guys will like it. </p>
+ </div>
+ <h3> What I usually do </h3>
+ <div id= "div1">
+ I love playing video games, I play a variety types of games like league of legends, overwatch, hearthstone, but mostly I got into Black Dessert Online recently and I love it, it is probably one of the best mmorpg games that is currently out in my opinion. Yes, I also like Korean culture eventhough I don't understand but one day I will learn their language. 
+ </div>
+ <h3> Videos </h3>
+ <div>
+ <p> Here is one of my favorite Korean song. </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k8V83TqLw3A" frameborder="0" allowfullscreen></iframe>
 <p> Here is a trailer of one my favorite korean drama. </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZBGgNOmIYsQ" frameborder="0" allowfullscreen></iframe>
+</div>
 </main>
 <footer>
   <small><i>Copyright &copy; 2016 Aedjet Simoy</i></small>
